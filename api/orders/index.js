@@ -1,12 +1,8 @@
 const request = require('request');
 const fs = require("fs");
 
-const {getAPIToken, config} = require('../api-keys');
+const {getAPIToken} = require('../api-keys');
 const {token, accountId, apiUrl} = getAPIToken();
-
-if (config.useSandboxAccount) {
-    console.info('SANDBOX ACCOUNT');
-}
 
 /**
  * Get open orders

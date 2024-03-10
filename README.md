@@ -5,7 +5,7 @@
 Requirements:
 
 1. Node
-2. Update api-keys.js with Tradier account number and API keys for sandbox and real money accounts.
+2. Update api-keys.js file with Tradier account number and API keys for sandbox and real money accounts.
 
 Examples to run in Terminal:
 

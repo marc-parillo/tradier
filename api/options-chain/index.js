@@ -2,12 +2,8 @@ const request = require('request');
 const fs = require('fs');
 const moment = require('moment-timezone');
 
-const {getAPIToken, config} = require('../api-keys');
+const {getAPIToken} = require('../api-keys');
 const {token, apiUrl} = getAPIToken();
-
-if (config.useSandboxAccount) {
-    console.info('SANDBOX ACCOUNT');
-}
 
 let symbol = 'SPY'
 let date = moment().format('YYYY-MM-DD');

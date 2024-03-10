@@ -15,6 +15,8 @@ function getAPIToken(useProd = false) {
 
     if (useProd) {
 
+        console.info('WARNING! USING REAL MONEY!');
+
         return {
             accountId: config.account,
             token: config.token,
@@ -25,6 +27,8 @@ function getAPIToken(useProd = false) {
 
         if (config.useSandboxAccount) {
 
+            console.info('USING SANDBOX ACCOUNT');
+
             return {
                 accountId: config['sandbox_account'],
                 token: config['sandbox_token'],
@@ -33,6 +37,8 @@ function getAPIToken(useProd = false) {
             }
 
         } else {
+
+            console.info('WARNING! USING REAL MONEY!');
 
             return {
                 accountId: config.account,
